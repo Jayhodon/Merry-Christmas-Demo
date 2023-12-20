@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HTML+CSS+JS圣诞树</title>
+        <title>Merry Christmas!</title>
         <style>
             body {
                 background: #5f0d0d;
@@ -139,7 +139,7 @@
                 font-size: 1.5em;
                 font-weight: bold;
                 color: transparent;
-                background: linear-gradient(45deg,  #8B0000,#008080);
+                background: linear-gradient(45deg, #8b0000, #008080);
                 background-size: 200% 200%;
                 animation: gradientAnimation 3s infinite;
                 -webkit-background-clip: text;
@@ -147,7 +147,7 @@
                 animation: fadeIn 5s ease-in-out;
                 position: absolute;
                 top: 58%;
-                left: 30vw;
+                left: 28%;
             }
 
             @keyframes gradientAnimation {
@@ -764,7 +764,7 @@
             w,
             h,
             particles = [],
-            probability = 0.02,
+            probability = 0.012,
             xPoint,
             yPoint;
         function onLoad() {
@@ -802,7 +802,7 @@
 
         function paint() {
             ctx.globalCompositeOperation = 'source-over';
-            ctx.fillStyle = 'rgba(0,0,0,0.2)';
+            ctx.fillStyle = '#3d0101'; // 深绿色
             ctx.fillRect(0, 0, w, h);
             ctx.globalCompositeOperation = 'lighter';
             for (var i = 0; i < particles.length; i++) {
